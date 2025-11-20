@@ -3,284 +3,222 @@
 /* ------------------------------------------------------------------ */
 body { 
     background: #0f0f0f; 
-    font-family: 'Open Sans', sans-serif; /* Ensure font consistency */
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-/* ------------------------------------------------------------------ */
-/* Smooth Scroll for anchor links */
-/* ------------------------------------------------------------------ */
 html {
-    scroll-behavior: smooth; /* Enable smooth scrolling */
+    scroll-behavior: smooth; /* Smooth scroll for anchor links */
 }
 
 /* ------------------------------------------------------------------ */
 /* b. Header Styles */
 /* ------------------------------------------------------------------ */
 header {
-   position: relative;
-   height: 800px;
-   min-height: 500px;
-   width: 100%;
-   background: #161415 url(../images/header-background.gif) no-repeat top center;
-   background-size: cover !important;
-   -webkit-background-size: cover !important;
-   text-align: center;
-   overflow: hidden;
-}
-
-/* Scroll Indicator */
-header .scrolldown a, #about .scrolldown a {
-   position: absolute;
-   bottom: 30px;
-   left: 50%;
-   margin-left: -29px;
-   color: #fff;
-   display: block;
-   height: 42px;
-   width: 42px;
-   font-size: 42px;
-   line-height: 42px;
-   border-radius: 100%;
-   transition: all 0.3s ease-in-out;
-}
-
-header .scrolldown a:hover, #about .scrolldown a:hover {
-   color: #11ABB0; /* Highlight color on hover */
+    position: relative;
+    height: 800px;
+    min-height: 500px;
+    width: 100%;
+    background: #161415 url(../images/header-background.gif) no-repeat top center;
+    background-size: cover;
+    text-align: center;
+    overflow: hidden;
 }
 
 /* ------------------------------------------------------------------ */
 /* c. About Section */
 /* ------------------------------------------------------------------ */
 #about {
-   background: #2B2B2B;
-   padding-top: 96px;
-   padding-bottom: 66px;
-   overflow: hidden;
-   position: relative;
+    background: #2B2B2B;
+    padding: 96px 0 66px 0;
+    overflow: hidden;
+    position: relative;
 }
 
 #about h2 {
-   font: 22px/30px 'opensans-bold', sans-serif;
-   color: #fff;
-   margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    color: #fff;
+    margin-bottom: 12px;
 }
 
 #about .profile-pic {
-   position: relative;
-   width: 120px;
-   height: 120px;
-   border-radius: 100%;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
 }
-
-#about .scrolldown {
-   position: absolute;
-   bottom: 30px;
-   left: 50%;
-   margin-left: -29px;
-   color: #fff;
-   display: block;
-   height: 42px;
-   width: 42px;
-   font-size: 42px;
-   line-height: 42px;
-   border-radius: 100%;
-   transition: all 0.3s ease-in-out;
-}
-
-#about .scrolldown a:hover {
-   color: #11ABB0;
-}
-
-#about a, #about a:visited  { color: #fff; }
-#about a:hover, #about a:focus { color: #11ABB0; }
 
 #about .main-col { padding-right: 5%; }
 
-/* Resume section link from About */
-#about .scrolldown a {
-   position: absolute;
-   bottom: 30px;
-   left: 50%;
-   margin-left: -29px;
-   color: #fff;
-   display: block;
-   height: 42px;
-   width: 42px;
-   font-size: 42px;
-   line-height: 42px;
-   border-radius: 100%;
-   transition: all 0.3s ease-in-out;
-}
+#about a, #about a:visited  { color: #fff; }
+#about a:hover, #about a:focus { color: #11ABB0; }
 
 /* ------------------------------------------------------------------ */
 /* d. Resume Section */
 /* ------------------------------------------------------------------ */
 #resume {
-   background: #fff;
-   padding-top: 90px;
-   padding-bottom: 72px;
-   overflow: hidden;
+    background: #fff;
+    padding: 90px 0 72px 0;
+    overflow: hidden;
 }
 
 #resume h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;
-   text-transform: uppercase;
-   letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
+
 #resume h1 span {
-   border-bottom: 3px solid #11ABB0;
-   padding-bottom: 6px;
+    border-bottom: 3px solid #11ABB0;
+    padding-bottom: 6px;
 }
+
 #resume h3 {
-   font: 25px/30px 'opensans-bold', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
 }
 
 #resume .header-col { padding-top: 9px; }
 #resume .main-col { padding-right: 10%; }
 
 #resume .info {
-   font: 16px/24px 'librebaskerville-italic', serif;
-   color: #6E7881;
-   margin-bottom: 18px;
-   margin-top: 9px;
-}
-
-/* ------------------------------------------------------------------ */
-/* Scroll Button */
-.scrolldown a {
-   position: absolute;
-   bottom: 20px;
-   left: 50%;
-   margin-left: -29px;
-   color: #fff;
-   display: block;
-   height: 42px;
-   width: 42px;
-   font-size: 42px;
-   line-height: 42px;
-   color: #fff;
-   border-radius: 100%;
-   transition: all .3s ease-in-out;
-}
-
-.scrolldown a:hover {
-   color: #11ABB0;
+    font: italic 16px/24px 'Libre Baskerville', serif;
+    color: #6E7881;
+    margin: 9px 0 18px 0;
 }
 
 /* ------------------------------------------------------------------ */
 /* e. Portfolio Section */
 /* ------------------------------------------------------------------ */
 #portfolio {
-   background: #ebeeee;
-   padding-top: 90px;
-   padding-bottom: 60px;
+    background: #ebeeee;
+    padding: 90px 0 60px 0;
 }
+
 #portfolio h1 {
-   font: 15px/24px 'opensans-semibold', sans-serif;
-   text-transform: uppercase;
-   letter-spacing: 1px;
-   text-align: center;
-   margin-bottom: 48px;
-   color: #95A3A3;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 48px;
+    color: #95A3A3;
 }
 
 /* ------------------------------------------------------------------ */
 /* f. Call To Action Section */
 /* ------------------------------------------------------------------ */
 #call-to-action {
-   background: #212121;
-   padding-top: 66px;
-   padding-bottom: 48px;
-}
-#call-to-action h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;
-   text-transform: uppercase;
-   letter-spacing: 3px;
-   color: #fff;
-}
-#call-to-action h1 span { display: none; }
-#call-to-action .header-col h1:before {
-   font-family: 'FontAwesome';
-   content: "\f0ac";
-   padding-right: 10px;
-   font-size: 72px;
-   line-height: 72px;
-   text-align: left;
-   float: left;
-   color: #fff;
+    background: #212121;
+    padding: 66px 0 48px 0;
 }
 
-#call-to-action .action {
-   margin-top: 12px;
+#call-to-action h1 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
 }
+
+#call-to-action h1 span { display: none; }
+
+#call-to-action .header-col h1:before {
+    font-family: 'FontAwesome';
+    content: "\f0ac";
+    padding-right: 10px;
+    font-size: 72px;
+    line-height: 72px;
+    float: left;
+    color: #fff;
+}
+
+#call-to-action .action { margin-top: 12px; }
+
 #call-to-action h2 {
-   font: 28px/36px 'opensans-bold', sans-serif;
-   color: #EBEEEE;
-   margin-bottom: 6px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    color: #EBEEEE;
+    margin-bottom: 6px;
 }
-#call-to-action h2 a {
-   color: inherit;
-}
+
+#call-to-action h2 a { color: inherit; }
+
 #call-to-action p {
-   color: #636363;
-   font-size: 17px;
+    color: #636363;
+    font-size: 17px;
 }
 
 /* ------------------------------------------------------------------ */
 /* g. Testimonials Section */
 /* ------------------------------------------------------------------ */
 #testimonials {
-   background: #1F1F1F url(../images/testimonials-bg.jpg) no-repeat center center;
-   background-size: cover !important;
-   -webkit-background-size: cover !important;
-   background-attachment: fixed;
-   position: relative;
-   min-height: 200px;
-   width: 100%;
-   overflow: hidden;
+    background: #1F1F1F url(../images/testimonials-bg.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 200px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
 }
+
 #testimonials .text-container {
-   padding-top: 96px;
-   padding-bottom: 66px;
+    padding: 96px 0 66px 0;
 }
+
 #testimonials h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;
-   text-transform: uppercase;
-   letter-spacing: 3px;
-   color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
 }
+
 #testimonials h1 span { display: none; }
+
 #testimonials .header-col { padding-top: 9px; }
+
 #testimonials .header-col h1:before {
-   font-family: 'FontAwesome';
-   content: "\f10d";
-   padding-right: 10px;
-   font-size: 72px;
-   line-height: 72px;
-   text-align: left;
-   float: left;
-   color: #fff;
+    font-family: 'FontAwesome';
+    content: "\f10d";
+    padding-right: 10px;
+    font-size: 72px;
+    line-height: 72px;
+    float: left;
+    color: #fff;
 }
 
 /* ------------------------------------------------------------------ */
 /* h. Contact Section */
 /* ------------------------------------------------------------------ */
 #contact {
-   background: #191919;
-   padding-top: 96px;
-   padding-bottom: 102px;
-   color: #636363;
+    background: #191919;
+    padding: 96px 0 102px 0;
+    color: #636363;
 }
+
 #contact .section-head { margin-bottom: 42px; }
-#contact a, #contact a:visited  { color: #11ABB0; }
+
+#contact a, #contact a:visited { color: #11ABB0; }
 #contact a:hover, #contact a:focus { color: #fff; }
 
 #contact h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;
-   text-transform: uppercase;
-   letter-spacing: 3px;
-   color: #EBEEEE;
-   margin-bottom: 6px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #EBEEEE;
+    margin-bottom: 6px;
 }
 
 #contact .header-col { padding-top: 6px; }
@@ -289,45 +227,56 @@ header .scrolldown a:hover, #about .scrolldown a:hover {
 /* i. Footer Section */
 /* ------------------------------------------------------------------ */
 footer {
-   padding-top: 48px;
-   margin-bottom: 48px;
-   color: #303030;
-   font-size: 14px;
-   text-align: center;
-   position: relative;
+    padding: 48px 0;
+    margin-bottom: 48px;
+    color: #303030;
+    font-size: 14px;
+    text-align: center;
 }
 
 footer a, footer a:visited { color: #525252; }
 footer a:hover, footer a:focus { color: #fff; }
 
-/* Social links */
 footer .social-links {
-   margin: 18px 0 30px 0;
+    margin: 18px 0 30px 0;
 }
 
 footer .social-links a {
-   font-size: 20px;
-   margin: 0 15px;
-   color: #303030;
-   transition: all 0.3s ease-in-out;
+    font-size: 20px;
+    margin: 0 15px;
+    color: #303030;
+    transition: all 0.3s ease-in-out;
 }
 
-footer .social-links a:hover {
-   color: #11ABB0;
+footer .social-links a:hover { color: #11ABB0; }
+
+/* ------------------------------------------------------------------ */
+/* j. Scroll Indicators */
+/* ------------------------------------------------------------------ */
+.scrolldown a {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -21px; /* half of width to center */
+    display: block;
+    height: 42px;
+    width: 42px;
+    font-size: 42px;
+    line-height: 42px;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
 }
 
-/* ------------------------------------------------------------------ */
-/* j. Additional Styles for Visibility and Layout Tweaks */
-/* ------------------------------------------------------------------ */
+.scrolldown a:hover { color: #11ABB0; }
 
-/* Ensure smooth visual transitions when page is scrolled */
 .scrolldown {
-   opacity: 1;
-   visibility: visible;
-   transition: opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 body.scrolled .scrolldown {
-   opacity: 0;
-   visibility: hidden;
+    opacity: 0;
+    visibility: hidden;
 }
