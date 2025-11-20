@@ -1,333 +1,224 @@
-/* ------------------------------------------------------------------ */
-/* a. General Styles */
-/* ------------------------------------------------------------------ */
-body { 
-    background: #0f0f0f; 
-    font-family: 'Open Sans', sans-serif; /* Ensure font consistency */
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="icon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Kyle C. Bonita is a passionate software developer skilled in both software applications and hardware system development.">
 
-/* ------------------------------------------------------------------ */
-/* Smooth Scroll for anchor links */
-/* ------------------------------------------------------------------ */
-html {
-    scroll-behavior: smooth; /* Enable smooth scrolling */
-}
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <title>kyle bonita | </title>
 
-/* ------------------------------------------------------------------ */
-/* b. Header Styles */
-/* ------------------------------------------------------------------ */
-header {
-   position: relative;
-   height: 800px;
-   min-height: 500px;
-   width: 100%;
-   background: #161415 url(../images/header-background.gif) no-repeat top center;
-   background-size: cover !important;
-   -webkit-background-size: cover !important;
-   text-align: center;
-   overflow: hidden;
-}
+    <style>
+      /* ▼▼ Add slide-down styling here ▼▼ */
+      .experience-content {
+        display: none;
+      }
 
-/* Scroll Indicator */
-header .scrolldown a, #about .scrolldown a {
-   position: absolute;
-   bottom: 30px;
-   left: 50%;
-   margin-left: -29px;
-   color: #fff;
-   display: block;
-   height: 42px;
-   width: 42px;
-   font-size: 42px;
-   line-height: 42px;
-   border-radius: 100%;
-   transition: all 0.3s ease-in-out;
-}
+      .company-toggle {
+        cursor: pointer;
+        transition: color 0.2s ease-in-out;
+      }
 
-header .scrolldown a:hover, #about .scrolldown a:hover {
-   color: #11ABB0; /* Highlight color on hover */
-}
+      .company-toggle:hover {
+        color: #00aced;
+      }
+      /* ▲▲ End slide-down styling ▲▲ */
+    </style>
+  </head>
 
-/* ------------------------------------------------------------------ */
-/* c. About Section */
-/* ------------------------------------------------------------------ */
-#about {
-   background: #2B2B2B;
-   padding-top: 96px;
-   padding-bottom: 66px;
-   overflow: hidden;
-   position: relative;
-}
+  <body>
+    <div class="PersonalWebsite">
+      <header id="home" class="align-content-center">
+        <nav id="nav-wrap">
+          <div class="navbar-nav">
+            <ul id="nav" class="nav align-content-center" role="navigation">
+              <li class="current"><a class="smoothscroll" href="#home" aria-label="Go to home section">Home</a></li>
+              <li><a class="smoothscroll" href="#about" aria-label="Go to about section">About</a></li>
+              <li><a class="smoothscroll" href="#resume" aria-label="Go to resume section">Resume</a></li>
+            </ul>
+          </div>
+        </nav>
 
-#about h2 {
-   font: 22px/30px 'opensans-bold', sans-serif;
-   color: #fff;
-   margin-bottom: 12px;
-}
+        <div class="row banner">
+          <div class="banner-text">
+            <h1 class="responsive-headline">I'm Kyle C.Bonita</h1>
+            <h3>
+              Passionate <span>Software Developer</span> skilled in developing both
+              <span> software applications and integrated hardware system.</span>
+            </h3>
+            <hr />
+            <ul class="social">
+              <li><a href="https://www.linkedin.com/in/kyle-bonita-21b537340/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="https://www.facebook.com/kyle.chavez.bonita/" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://www.instagram.com/chicken_spag_/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="https://ph.jobstreet.com/profile/kyle-bonita-03xw70V5jy" target="_blank" rel="noopener noreferrer"><i class="fa fa-briefcase"></i></a></li>
+              <li><a href="https://github.com/bonitak999" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a></li>
+              <li><a href="https://www.youtube.com/@KyleBonita-wh3md" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube"></i></a></li>
+            </ul>
+          </div>
+        </div>
 
-#about .profile-pic {
-   position: relative;
-   width: 120px;
-   height: 120px;
-   border-radius: 100%;
-}
+        <p class="scrolldown">
+          <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+        </p>
+      </header>
 
-#about .scrolldown {
-   position: absolute;
-   bottom: 30px;
-   left: 50%;
-   margin-left: -29px;
-   color: #fff;
-   display: block;
-   height: 42px;
-   width: 42px;
-   font-size: 42px;
-   line-height: 42px;
-   border-radius: 100%;
-   transition: all 0.3s ease-in-out;
-}
+      <!-- ABOUT SECTION -->
+<section id="about">
+  <div class="row">
+    <div class="three columns">
+      <img class="profile-pic" src="images/profile.jpg" alt="Profile Pic" />
+    </div>
 
-#about .scrolldown a:hover {
-   color: #11ABB0;
-}
+    <div class="nine columns main-col text-left">
+      <h2>About Me</h2>
 
-#about a, #about a:visited  { color: #fff; }
-#about a:hover, #about a:focus { color: #11ABB0; }
+      <h2>Summary</h2>
+      <p>
+        Hi, I'm Kyle Chavez Bonita, an IT Support Staff based in Calauan, Laguna,
+        Philippines. I specialize in both software and hardware development,
+        providing technical support and building reliable IT solutions for business environments.
+        I’m passionate about solving technical problems, improving system efficiency,
+        and continuously learning new technologies to support organizational success.
+        Let’s connect and create innovative solutions together!
+      </p>
 
-#about .main-col { padding-right: 5%; }
+      <h2>Technical Skills</h2>
+      <p><strong>Programming Languages:</strong><br> Python, Java, JavaScript, C++, C#, SQL, HTML, CSS</p>
+      <p><strong>Frameworks & Technologies:</strong><br> React, Node.js, Django, .NET, Git, MySQL, MongoDB</p>
+      <p><strong>Hardware & IT Skills:</strong><br> Hardware Troubleshooting, PC Assembly, Networking Basics, System Diagnostics</p>
 
-/* Resume section link from About */
-#about .scrolldown a {
-   position: absolute;
-   bottom: 30px;
-   left: 50%;
-   margin-left: -29px;
-   color: #fff;
-   display: block;
-   height: 42px;
-   width: 42px;
-   font-size: 42px;
-   line-height: 42px;
-   border-radius: 100%;
-   transition: all 0.3s ease-in-out;
-}
+      <div class="row">
+        <div class="columns contact-details">
+          <h2>Contact Details</h2>
+          <p class="address">
+            <span>Kyle Chavez Bonita</span><br />
+            <span>kylebonita07@gmail.com</span><br />
+            <span>+63 9948 269 197 </span>
+          </p>
+        </div>
 
-/* ------------------------------------------------------------------ */
-/* d. Resume Section */
-/* ------------------------------------------------------------------ */
-#resume {
-   background: #fff;
-   padding-top: 90px;
-   padding-bottom: 72px;
-   overflow: hidden;
-}
+        <div class="columns download">
+          <p>
+            <a href="https://drive.google.com/file/d/1jA031LT9lqp_ionv2CMlU8yKSDG8vbsb/view?usp=drive_link" target="_blank" class="button">
+              <i class="fa fa-download"></i> Download Resume
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-#resume h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;
-   text-transform: uppercase;
-   letter-spacing: 1px;
-}
-#resume h1 span {
-   border-bottom: 3px solid #11ABB0;
-   padding-bottom: 6px;
-}
-#resume h3 {
-   font: 25px/30px 'opensans-bold', sans-serif;
-}
+  <!-- Scroll down to Resume Section -->
+  <p class="scrolldown">
+    <a class="smoothscroll" href="#resume"><i class="icon-down-circle"></i></a>
+  </p>
+</section>
 
-#resume .header-col { padding-top: 9px; }
-#resume .main-col { padding-right: 10%; }
 
-#resume .info {
-   font: 16px/24px 'librebaskerville-italic', serif;
-   color: #6E7881;
-   margin-bottom: 18px;
-   margin-top: 9px;
-}
+      <!-- RESUME SECTION -->
+      <section id="resume">
+        <div class="row work">
+          <div class="three columns header-col">
+            <h1><span>Experience</span></h1>
+          </div>
 
-/* ------------------------------------------------------------------ */
-/* Scroll Button */
-.scrolldown a {
-   position: absolute;
-   bottom: 20px;
-   left: 50%;
-   margin-left: -29px;
-   color: #fff;
-   display: block;
-   height: 42px;
-   width: 42px;
-   font-size: 42px;
-   line-height: 42px;
-   color: #fff;
-   border-radius: 100%;
-   transition: all .3s ease-in-out;
-}
+          <div class="nine columns main-col">
+            <!-- Experience 1 -->
+            <div class="experience-item">
+              <h3 class="company-toggle">Filstar Distributors Corporation </h3>
+              <div class="experience-content">
+                <p class="info">
+                  Technical Specialist <span>&bull;</span>
+                  <em class="date"> August 2025 - November 2025</em>
+                </p>
+                <p>
+                  Provided technical support and troubleshooting for IT systems, ensured smooth operation of
+                  company hardware and software, and assisted in implementing IT solutions to improve efficiency.
+                  <br>
+                  <i class="fa fa-arrow-right"></i>
+                  <a href="https://filstar.com.ph/" target="_blank">Filstar Distributors</a>
+                </p>
+              </div>
+            </div>
 
-.scrolldown a:hover {
-   color: #11ABB0;
-}
+            <!-- Experience 2 -->
+            <div class="experience-item">
+              <h3 class="company-toggle">Chase Technologies</h3>
+              <div class="experience-content">
+                <p class="info">
+                  Technical Support Specialist <span>&bull;</span>
+                  <em class="date"> September 2023 - January 2025 </em>
+                </p>
+                <p>
+                  Worked as a Front End Developer and relocated to Cebu to be a Technical Support
+                  for parking management at Ayala Malls Center Cebu.
+                  <br>
+                  <i class="fa fa-arrow-right"></i>
+                  <a href="https://chasetech.com/" target="_blank">Chase Technologies Corporation </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-/* ------------------------------------------------------------------ */
-/* e. Portfolio Section */
-/* ------------------------------------------------------------------ */
-#portfolio {
-   background: #ebeeee;
-   padding-top: 90px;
-   padding-bottom: 60px;
-}
-#portfolio h1 {
-   font: 15px/24px 'opensans-semibold', sans-serif;
-   text-transform: uppercase;
-   letter-spacing: 1px;
-   text-align: center;
-   margin-bottom: 48px;
-   color: #95A3A3;
-}
+        <!-- EDUCATION -->
+        <div class="row education">
+          <div class="three columns header-col">
+            <h1><span>Education</span></h1>
+          </div>
 
-/* ------------------------------------------------------------------ */
-/* f. Call To Action Section */
-/* ------------------------------------------------------------------ */
-#call-to-action {
-   background: #212121;
-   padding-top: 66px;
-   padding-bottom: 48px;
-}
-#call-to-action h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;
-   text-transform: uppercase;
-   letter-spacing: 3px;
-   color: #fff;
-}
-#call-to-action h1 span { display: none; }
-#call-to-action .header-col h1:before {
-   font-family: 'FontAwesome';
-   content: "\f0ac";
-   padding-right: 10px;
-   font-size: 72px;
-   line-height: 72px;
-   text-align: left;
-   float: left;
-   color: #fff;
-}
+          <div class="nine columns main-col">
+            <div class="row item">
+              <div class="twelve columns">
+                <h3>Laguna University</h3>
+                <p class="info">(BSIT) Bachelor of Science in Computer Technologies
+                  <span>&bull;</span><em class="date">August 2022 - 2023</em>
+                </p>
+                <i class="fa fa-arrow-right"></i>
+                <a href="https://lu.edu.ph/" target="_blank">Laguna University</a>
 
-#call-to-action .action {
-   margin-top: 12px;
-}
-#call-to-action h2 {
-   font: 28px/36px 'opensans-bold', sans-serif;
-   color: #EBEEEE;
-   margin-bottom: 6px;
-}
-#call-to-action h2 a {
-   color: inherit;
-}
-#call-to-action p {
-   color: #636363;
-   font-size: 17px;
-}
+                <br><br>
 
-/* ------------------------------------------------------------------ */
-/* g. Testimonials Section */
-/* ------------------------------------------------------------------ */
-#testimonials {
-   background: #1F1F1F url(../images/testimonials-bg.jpg) no-repeat center center;
-   background-size: cover !important;
-   -webkit-background-size: cover !important;
-   background-attachment: fixed;
-   position: relative;
-   min-height: 200px;
-   width: 100%;
-   overflow: hidden;
-}
-#testimonials .text-container {
-   padding-top: 96px;
-   padding-bottom: 66px;
-}
-#testimonials h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;
-   text-transform: uppercase;
-   letter-spacing: 3px;
-   color: #fff;
-}
-#testimonials h1 span { display: none; }
-#testimonials .header-col { padding-top: 9px; }
-#testimonials .header-col h1:before {
-   font-family: 'FontAwesome';
-   content: "\f10d";
-   padding-right: 10px;
-   font-size: 72px;
-   line-height: 72px;
-   text-align: left;
-   float: left;
-   color: #fff;
-}
+                <h3>Sto Tomas Integrated Highschool</h3>
+                <p class="info">(ICT) Information and Communications Technology
+                  <span>&bull;</span><em class="date">August 2019 - 2020</em>
+                </p>
+                <i class="fa fa-arrow-right"></i>
+                <a href="https://r4a-2.lms.deped.gov.ph/moodle/course/index.php?categoryid=1421/" target="_blank">Sto Tomas Integrated Highschool</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
 
-/* ------------------------------------------------------------------ */
-/* h. Contact Section */
-/* ------------------------------------------------------------------ */
-#contact {
-   background: #191919;
-   padding-top: 96px;
-   padding-bottom: 102px;
-   color: #636363;
-}
-#contact .section-head { margin-bottom: 42px; }
-#contact a, #contact a:visited  { color: #11ABB0; }
-#contact a:hover, #contact a:focus { color: #fff; }
+    <!-- JS FILES -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/waypoints.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/magnific-popup.js"></script>
 
-#contact h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;
-   text-transform: uppercase;
-   letter-spacing: 3px;
-   color: #EBEEEE;
-   margin-bottom: 6px;
-}
+    <!-- ▼▼ ADD THIS SCRIPT FOR ROLL-DOWN ▼▼ -->
+    <script>
+      $(document).ready(function () {
+        $(".company-toggle").click(function () {
+          $(this).next(".experience-content").slideToggle(300);
+        });
+      });
+    </script>
+    <!-- ▲▲ END OF SLIDE-DOWN SCRIPT ▲▲ -->
 
-#contact .header-col { padding-top: 6px; }
+    <script src="js/init.js"></script>
 
-/* ------------------------------------------------------------------ */
-/* i. Footer Section */
-/* ------------------------------------------------------------------ */
-footer {
-   padding-top: 48px;
-   margin-bottom: 48px;
-   color: #303030;
-   font-size: 14px;
-   text-align: center;
-   position: relative;
-}
-
-footer a, footer a:visited { color: #525252; }
-footer a:hover, footer a:focus { color: #fff; }
-
-/* Social links */
-footer .social-links {
-   margin: 18px 0 30px 0;
-}
-
-footer .social-links a {
-   font-size: 20px;
-   margin: 0 15px;
-   color: #303030;
-   transition: all 0.3s ease-in-out;
-}
-
-footer .social-links a:hover {
-   color: #11ABB0;
-}
-
-/* ------------------------------------------------------------------ */
-/* j. Additional Styles for Visibility and Layout Tweaks */
-/* ------------------------------------------------------------------ */
-
-/* Ensure smooth visual transitions when page is scrolled */
-.scrolldown {
-   opacity: 1;
-   visibility: visible;
-   transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-
-body.scrolled .scrolldown {
-   opacity: 0;
-   visibility: hidden;
-}
+  </body>
+</html>
